@@ -13,13 +13,19 @@ class MinePage extends StatelessWidget {
               children: <Widget>[
                 Padding(
                   padding: EdgeInsets.all(20.0),
-                  child: RaisedButton(
-                    onPressed: (){
-                      print('click');
-                    },
-                    child: Image(image: AssetImage('image/me.png'), width: 40, height:40),
-                    color: Color.fromRGBO(0, 0, 0, 0.0),
+                  child: IconButton(
+                      onPressed: () {
+                        print('clickddd');
+                      },
+                      icon: Image.asset('image/me.png'),
                   ),
+//                  child: RaisedButton(
+//                    onPressed: (){
+//                      print('click');
+//                    },
+//                    child: Image(image: AssetImage('image/me.png'), width: 40, height:40),
+//                    color: Color.fromRGBO(0, 0, 0, 0.0),
+//                  ),
                 ),
                 SizedBox(
                   width: 10,
